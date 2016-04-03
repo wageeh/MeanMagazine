@@ -1,26 +1,57 @@
 {
-  "name": "meanmagazine",
-  "version": "0.0.1",
-  "description": "this a sample project created using mean stack.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wageeh/MeanMagazine.git"
-  },
-  "keywords": [
-    "meanstack",
-    "magazine"
-  ],
-  "author": "magazine developer",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wageeh/MeanMagazine/issues"
-  },
-  "homepage": "https://github.com/wageeh/MeanMagazine#readme",
-  "dependencies": {
-    "express": "^4.13.4"
-  }
+    "name": "meanmagazine",
+    "version": "0.0.1",
+    "description": "this a sample project created using mean stack.",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run server:dev",
+        "typings": "typings",
+        "postinstall": "typings install",
+        "server:dev": "webpack-dev-server --config config/webpack.dev.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base src/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wageeh/MeanMagazine.git"
+    },
+    "keywords": [
+        "meanstack",
+        "magazine"
+    ],
+    "author": "magazine developers",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wageeh/MeanMagazine/issues"
+    },
+    "homepage": "https://github.com/wageeh/MeanMagazine#readme",
+    "dependencies": {
+        "express": "^4.13.4",
+        "angular2": "2.0.0-beta.13",
+        "core-js": "^2.1.5",
+        "rxjs": "5.0.0-beta.2",
+        "zone.js": "0.6.6"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.9",
+        "typings": "^0.7.11",
+        "ts-node": "^0.7.1",
+        "tslint": "^3.6.0",
+        "tslint-stylish": "2.1.0-beta",
+        "tslint-loader": "^2.1.3",
+        "codelyzer": "0.0.12",
+        "webpack": "^1.12.14",
+        "webpack-dev-server": "^1.14.1",
+        "awesome-typescript-loader": "~0.16.2",
+        "json-loader": "^0.5.4",
+        "raw-loader": "^0.5.1",
+        "copy-webpack-plugin": "^1.1.1",
+        "css-loader": "^0.23.1",
+        "html-webpack-plugin": "^2.9.0",
+        "webpack-merge": "^0.8.4",
+        "source-map-loader":"^0.1.5",
+        "serve-static":"^1.10.2"
+    },
+    "engines": {
+        "node": ">= 4.2.1",
+        "npm": ">= 3"
+    }
 }
