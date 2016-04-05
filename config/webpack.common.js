@@ -7,7 +7,7 @@ var ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 
 const METADATA = {
     baseUrl: '/',
-    title:'MEAN Magazine'
+    title: 'MEAN Magazine'
 };
 
 module.exports = {
@@ -32,8 +32,7 @@ module.exports = {
                 test: /\.ts$/,
                 loader: 'tslint-loader',
                 exclude: [
-                    helpers.root('node_modules'),
-                    helpers.root('typings')
+                    helpers.root('node_modules')
                 ]
             },
             {

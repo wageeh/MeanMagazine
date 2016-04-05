@@ -12,12 +12,12 @@
     "exclude": [
         "node_modules",
         "typings/main",
-        "typings/main.d.ts",
-        "typings/browser.d.ts"
+        "typings/main.d.ts"
     ],
     "filesGlob": [
         "./src/**/*.ts",
-        "!./node_modules/**/*.ts"
+        "!./node_modules/**/*.ts",
+        "typings/browser.d.ts"
     ],
     "awesomeTypescriptLoaderOptions": {
         "resolveGlobs": true,

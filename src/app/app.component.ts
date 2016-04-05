@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {ArticlesComponent} from './components/article';
 
 /*
  * App Component
@@ -6,7 +7,8 @@ import {Component} from 'angular2/core';
  */
 @Component({
     selector: 'app',
-    templateUrl: `app/app.component.html`
+    templateUrl: `app/app.component.html`,
+    directives: [ArticlesComponent]
 })
 export class App {
     constructor() { }
