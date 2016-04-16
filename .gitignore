@@ -37,3 +37,7 @@ typings
 
 #webstorm
 .idea
+
+#build
+build
+built

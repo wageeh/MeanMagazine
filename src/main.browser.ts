@@ -1,7 +1,19 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {CORE_DIRECTIVES} from "angular2/common";
+import { provide } from 'angular2/core';
 
+import { ROUTER_PROVIDERS, APP_BASE_HREF } from 'angular2/router';
+import rootReducer from './app/reducers';
+import {provideStore} from '@ngrx/store';
+import {instrumentStore} from '@ngrx/devtools';
 import {App} from './app';
 
-bootstrap(App, [CORE_DIRECTIVES]).catch(err => console.error(err));
+
+bootstrap(App, [
+    provideStore(rootReducer, []),
+    instrumentStore(),
+    ROUTER_PROVIDERS,
+    provide(APP_BASE_HREF, { useValue: '/' })
+]).catch(err => console.error(err));
+
+
 

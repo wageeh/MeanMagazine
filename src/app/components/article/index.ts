@@ -1,2 +1,2 @@
-export * from "./article.component";
-export * from "./articles.component";
+export * from './article.component';
+export * from './articles.component';

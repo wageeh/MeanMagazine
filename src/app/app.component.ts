@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
-import {ArticlesComponent} from './components/article';
+import {ArticlesComponent} from './components';
+import {Devtools} from '@ngrx/devtools';
 
 /*
  * App Component
@@ -8,11 +9,7 @@ import {ArticlesComponent} from './components/article';
 @Component({
     selector: 'app',
     templateUrl: `app/app.component.html`,
-    directives: [ArticlesComponent]
+    directives: [Devtools, ArticlesComponent]
 })
 export class App {
-    constructor() { }
-    ngOnInit() {
-        console.log('Initial App');
-    }
 }

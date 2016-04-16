@@ -1,3 +1,3 @@
-<ul *ngFor="#item of articles">
-    <article [article]="item"></article>
+<ul>
+    <article *ngFor="#item of articles | async" [article]="item"></article>
 </ul>
